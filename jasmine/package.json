@@ -1,0 +1,15 @@
+{
+  "name": "taggingTests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine --filter=#future"
+  },
+  "keywords": [],
+  "author": "Dan Siwiec <daniel.siwiec@gmail.com> (http://danielsiwiec.github.io)",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine-es6": "^0.1.2"
+  }
+}
