@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "webdriver-manager update; protractor"
+    "test": "webdriver-manager update; protractor --grep=#smoke"
   },
   "keywords": [],
   "author": "Dan Siwiec <daniel.siwiec@gmail.com> (http://danielsiwiec.github.io)",
   "license": "ISC",
   "devDependencies": {
-    "protractor": "^3.0.0"
+    "protractor": "^3.0.0",
+    "yargs": "^3.32.0"
   }
 }
