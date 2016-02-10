@@ -1,7 +1,7 @@
 'use strict';
 
 describe('angularjs homepage todo list', () => {
-  it('should add a todo #smoke', () => {
+  it('should add a todo #todo', () => {
     browser.get('https://angularjs.org')
 
     element(by.model('todoList.todoText')).sendKeys('write first protractor test')
@@ -15,5 +15,22 @@ describe('angularjs homepage todo list', () => {
     todoList.get(2).element(by.css('input')).click()
     let completedAmount = element.all(by.css('.done-true'))
     expect(completedAmount.count()).toEqual(2)
+  })
+})
+
+describe('google for angularjs #google', () => {
+  it('should return angularjs.org in results', () => {
+    browser.ignoreSynchronization = true;
+    browser.get('https://www.google.com/#q=angularjs')
+
+    browser.wait(() => {return element(by.css('cite')).isPresent()}, 1000)
+
+    let found = element.all(by.css('cite')).filter((element) => {
+      return element.getText().then((text) => {
+        return text === 'https://angularjs.org/'
+      })
+    }).count()
+
+    expect(found).toEqual(1)
   })
 })

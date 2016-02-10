@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "webdriver-manager update; protractor --grep=#smoke"
+    "test": "webdriver-manager update; protractor --grep=#google"
   },
   "keywords": [],
   "author": "Dan Siwiec <daniel.siwiec@gmail.com> (http://danielsiwiec.github.io)",
