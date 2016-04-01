@@ -10,6 +10,10 @@
   "author": "Dan Siwiec <daniel.siwiec@gmail.com> (http://danielsiwiec.github.io)",
   "license": "ISC",
   "devDependencies": {
-    "jasmine-es6": "^0.1.2"
+    "babel-core": "^6.7.4",
+    "jasmine": "^2.4.1"
+  },
+  "babel": {
+    "presets": ["es2015"]
   }
 }
