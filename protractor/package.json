@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "pretest": "scripts/travis.sh",
     "test": "webdriver-manager update; protractor --grep=#google"
   },
   "keywords": [],
