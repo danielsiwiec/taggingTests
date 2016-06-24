@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "6"
+env:
+  - TEST_DIR=jasmine
+  - TEST_DIR=karma-jasmine
+  - TEST_DIR=karma-mocha
+  - TEST_DIR=mocha
+  - TEST_DIR=protractor
+script: cd $TEST_DIR && npm install && npm test
